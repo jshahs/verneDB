@@ -1,2 +1,9 @@
-# verneDB
-Super Erlang MNESIA Database
+verneDB
+=====
+
+An OTP application
+
+Build
+-----
+
+    $ rebar3 compile

@@ -28,7 +28,7 @@ create_tables([{vmq_trie_subs, Attrs, Options} | Tables], Nodes) ->
                     4 ->
                         2
                 end,
-    Res = mnesia:create_table(vmq_trie_subs, [{attributes, Attrs},
+    Res = mnesia:create_table(vmq_trie_subs, [{attributes, Attrs},{type, bag},
                                   {frag_properties, [{hash_module,  verneDB_frag_hash},
                                                      {n_fragments, 128},
                                                      {n_ram_copies, NumCopies},
